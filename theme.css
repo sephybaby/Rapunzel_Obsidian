@@ -1,0 +1,166 @@
+.app-container,
+.workspace,
+.workspace-split,
+.workspace-leaf,
+.workspace-leaf-content,
+.markdown-source-view,
+.markdown-reading-view,
+.view-content,
+.workspace-tabs,
+.workspace-tab-header-container,
+.titlebar,
+.titlebar-inner,
+.side-dock-ribbon,
+.sidebar-toggle-button,
+.workspace-ribbon,
+.nav-header,
+.nav-buttons-container,
+.workspace-sidebar,
+.mod-left-split {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+
+.theme-light .workspace {
+    backdrop-filter: brightness(1) blur(5px) !important;
+}
+.theme-dark .workspace {
+    backdrop-filter: brightness(0.35) blur(5px) !important;
+}
+
+
+.horizontal-main-container {
+    background-image: url("https://i.pinimg.com/1200x/44/84/e2/4484e27801d03b976444b172dc7f2eac.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.markdown-rendered h1 { color: #63a698 !important; }
+.markdown-rendered h2 { color: #dbcdbf !important; }
+.markdown-rendered h3 { color: #bfdbcf !important; }
+.markdown-rendered h4 { color: #bfc7db !important; }
+.markdown-rendered h5 { color: #d8bfdb !important; }
+
+
+body {
+	--background-primary: transparent;
+	--background-secondary: transparent;
+	--divider-width: 0.5px;
+
+	--text-normal: #dbbfbf;
+	--text-faint: #b2b2b2;
+	--text-link: #b4b4b4;
+	--text-a: #d8bfdb;
+	--text-a-hover: #d8bfdb;
+	--text-mark: #bfc7db;
+	--code-background: var(--background-secondary);
+	--interactive-accent: rgba(104, 210, 247, 0.5);
+	--interactive-accent-hover: rgba(14, 210, 247, 0.8);
+	--interactive-before: #5e6565;
+	--blockquote-border: #4aa8fb;
+	--tag-background: rgba(14, 210, 247, 0.15);
+	--interactive-accent-rgb: 61, 215, 251;
+	--font-family-editor: 'Rubik';
+	--font-family-preview: 'Rubik';
+	--bg-sub-accent-55: rgba(244, 86, 157, 0.55);
+	--bg-accent-55: rgba(14, 210, 247, 0.55);
+	--bg-accent-25: rgba(14, 210, 247, 0.25);
+
+	--text-highlight-bg: #82a899;
+	--background-modifier-border: rgba(14, 210, 247, 0.05);
+	--table-border-color: rgb(14, 210, 247, 0.15);
+	--test-color: rgb(122, 162, 247);
+	--file-line-width: 1000px;
+	--editor-border-color: #101014;
+
+	--checkbox-color: #809960;
+
+	--hr-color: #e7dcdc;
+	--hr-thickness: 2px;
+}
+
+/* Preview mode headings */
+.markdown-rendered h1 { color: #63a698 !important; }
+.markdown-rendered h2 { color: #224026 !important; }
+.markdown-rendered h3 { color: #809960 !important; }
+.markdown-rendered h4 { color: #a88767 !important; }
+.markdown-rendered h5 { color: #224026 !important; }
+.markdown-rendered h6 { color: #d8bfdb !important; }
+
+/* Italic */
+.cm-em { color: #b0929c; }
+.markdown-rendered em { color: #b0929c !important; }
+
+/* Bold — this was missing before */
+.cm-strong { color: #ffffff; }
+.markdown-rendered strong { color: #ffffff !important; }
+
+.theme-dark {
+	--text-title-h1: #ccc0c0;
+	--text-title-h2: #021c0c;
+	--text-title-h3: #bfdbcf;
+	--text-title-h4: #bfc7db;
+	--text-title-h5: #d8bfdb;
+	--text-link: #b4b4b4;
+	--text-a: #d8bfdb;
+	--text-a-hover: #d8bfdb;
+	--text-mark: #bfc7db;
+	background: #021c0c;
+}
+
+/* Settings modal backgrounds */
+body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout > div.modal-content.vertical-tabs-container > div.vertical-tab-content-container > div {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+body > div.modal-container.mod-dim > div.modal.mod-settings.mod-sidebar-layout > div.modal-content.vertical-tabs-container > div.vertical-tab-header {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.suggestion-container {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	backdrop-filter: blur(8px);
+	border-radius: 10px;
+}
+
+body > div.modal-container.mod-dim > div.prompt {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+body > div.menu > div.menu-scroll {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#calendar-container > table > tbody > tr:nth-child(3) > td:nth-child(7) > div {
+background-color: #3a473b;
+}
+
+#calendar-container > div > h3 > span.year.svelte-1vwr9dd {
+text-emphasis-color: #3d4e41;
+}
+
+#calendar-container > div > h3 {
+-webkit-text-fill-color: rgba(39, 5, 5, 0.8);
+}
+
+/* Community plugin modal */
+body > div.modal.mod-community-modal.mod-sidebar-layout.mod-community-plugin div.community-modal-search-results-wrapper > div.community-modal-empty-state {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+body > div.modal.mod-community-modal.mod-sidebar-layout.mod-community-plugin div.community-modal-controls {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+body > div.modal.mod-community-modal.mod-sidebar-layout.mod-community-plugin div.community-modal-search-results-wrapper {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+body > div.modal.mod-community-modal.mod-sidebar-layout.mod-community-plugin div.community-modal-details > div.community-modal-info {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+body > div.modal.mod-community-modal.mod-sidebar-layout.mod-community-plugin div.community-modal-search-results-wrapper > div.community-modal-search-results {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Vault switcher */
+body > div.app-container div.workspace-sidedock-vault-profile > div.workspace-drawer-vault-switcher.has-active-menu {
+	background-color: rgba(0, 0, 0, 0.8);
+}
