@@ -1,7 +1,12 @@
-/* Rapunzel*/ 
-/* This theme is inspired by cherry red aesthetics and follows a general pattern of having cherry red and dark red colour palette */ 
-/* version: 1.0 */ 
-/* date: 2026-10-5 */ 
+/* Rapunzel */
+/* This theme is inspired by cherry red aesthetics and follows a general pattern of having cherry red and dark red colour palette */
+/* version: 1.0 */
+/* date: 2026-10-5 */
+
+
+/* =========================
+   GENERAL
+   ========================= */
 
 body {
 	--radius-s: 0px;
@@ -13,40 +18,13 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
-	--font-text-theme: InconsolataGo;
-}
 
-.theme-dark {
-	--text-title-h1: #d99696;
-	--text-title-h2: #857575;
-	--text-title-h3: #bfdbcf;
-	--text-title-h4: #9b6db0;
-	--text-title-h5: #d8bfdb;
-	--text-link: #b4b4b4;
-	--text-a: #d8bfdb;
-	--text-a-hover: #d8bfdb;
-	--text-mark: #bfc7db;
+	--font-text-theme: InconsolataGo;
+
+	/* Main colours */
 	--background-primary: #2b0309;
 	--background-secondary: #2b0309;
-}
 
-.theme-light {
-	--text-title-h1: #d99696;
-	--text-title-h2: #857575;
-	--text-title-h3: #bfdbcf;
-	--text-title-h4: #9b6db0;
-	--text-title-h5: #d8bfdb;
-	--text-link: #b4b4b4;
-	--text-a: #d8bfdb;
-	--text-a-hover: #d8bfdb;
-	--text-mark: #bfc7db;
-	--background-primary: #380910;
-	--background-secondary: #380910;
-}
-
-body {
-	--background-primary: transparent;
-	--background-secondary: transparent;
 	--divider-width: 0.5px;
 
 	--text-normal: #dbbfbf;
@@ -55,15 +33,19 @@ body {
 	--text-a: #d8bfdb;
 	--text-a-hover: #d8bfdb;
 	--text-mark: #bfc7db;
-	--code-background: var(--background-secondary);
+
+	--code-background: #2b0309;
+
 	--interactive-accent: #5e212a;
 	--interactive-accent-hover: #5e212a;
 	--interactive-before: #5e212a;
+
 	--blockquote-border: #5e212a;
 	--tag-background: #5e212a;
-	--interactive-accent: #5e212a;
+
 	--font-family-editor: 'Rubik';
 	--font-family-preview: 'Rubik';
+
 	--bg-sub-accent-55: #5e212a;
 	--bg-accent-55: #5e212a;
 	--bg-accent-25: #5e212a;
@@ -72,6 +54,7 @@ body {
 	--background-modifier-border: #5e212a;
 	--table-border-color: #5e212a;
 	--test-color: #5e212a;
+
 	--file-line-width: 1000px;
 	--editor-border-color: #101014;
 
@@ -81,23 +64,143 @@ body {
 	--hr-thickness: 2px;
 }
 
-.markdown-rendered h1 { color: #91aaab !important; }
-.markdown-rendered h2 { color: #dbcdbf !important; }
-.markdown-rendered h3 { color: #bfdbcf !important; }
-.markdown-rendered h4 { color: #bfc7db !important; }
-.markdown-rendered h5 { color: #d8bfdb !important; }
 
-/* Italic */
-.cm-em { color: #a9a1d1; }
-.markdown-rendered em { color: #a9a1d1 !important; }
+/* =========================
+   DARK THEME
+   ========================= */
 
-/* Bold */
-.cm-strong { color: #ba84b7; }
-.markdown-rendered strong { color: #ba84b7 !important; }
+.theme-dark {
+	--text-title-h1: #d99696;
+	--text-title-h2: #857575;
+	--text-title-h3: #bfdbcf;
+	--text-title-h4: #9b6db0;
+	--text-title-h5: #d8bfdb;
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	--text-link: #b4b4b4;
+	--text-a: #d8bfdb;
+	--text-a-hover: #d8bfdb;
+	--text-mark: #bfc7db;
+
+	--background-primary: #2b0309;
+	--background-secondary: #2b0309;
+}
+
+
+/* =========================
+   LIGHT THEME
+   ========================= */
+
+.theme-light {
+	--text-title-h1: #d99696;
+	--text-title-h2: #857575;
+	--text-title-h3: #bfdbcf;
+	--text-title-h4: #9b6db0;
+	--text-title-h5: #d8bfdb;
+
+	--text-link: #b4b4b4;
+	--text-a: #d8bfdb;
+	--text-a-hover: #d8bfdb;
+	--text-mark: #bfc7db;
+
+	--background-primary: #380910;
+	--background-secondary: #380910;
+}
+
+
+/* =========================
+   TOP OBSIDIAN BAR
+   ========================= */
+
+/* Main tab/header area */
+.workspace-tab-header-container,
+.workspace-tab-header-container-inner {
+	background-color: #2b0309 !important;
+	background: #2b0309 !important;
+}
+
+/* The area behind the tabs */
+.mod-root .workspace-tab-header-container {
+	background-color: #2b0309 !important;
+	background: #2b0309 !important;
+}
+
+/* Top titlebar */
+.titlebar,
+.titlebar-inner {
+	background-color: #2b0309 !important;
+	background: #2b0309 !important;
+}
+
+/* Top buttons */
+.titlebar-button-container {
+	background-color: #2b0309 !important;
+}
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+.markdown-rendered h1 {
+	color: #91aaab !important;
+}
+
+.markdown-rendered h2 {
+	color: #dbcdbf !important;
+}
+
+.markdown-rendered h3 {
+	color: #bfdbcf !important;
+}
+
+.markdown-rendered h4 {
+	color: #bfc7db !important;
+}
+
+.markdown-rendered h5 {
+	color: #d8bfdb !important;
+}
+
+
+/* =========================
+   ITALIC
+   ========================= */
+
+.cm-em {
+	color: #a9a1d1;
+}
+
+.markdown-rendered em {
+	color: #a9a1d1 !important;
+}
+
+
+/* =========================
+   BOLD
+   ========================= */
+
+.cm-strong {
+	color: #ba84b7;
+}
+
+.markdown-rendered strong {
+	color: #ba84b7 !important;
+}
+
+
+/* =========================
+   TABS
+   ========================= */
+
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
+
+
+/* =========================
+   SHARP CORNERS
+   ========================= */
 
 svg * {
 	stroke-linecap: square;
@@ -105,6 +208,11 @@ svg * {
 	rx: 0;
 	ry: 0;
 }
+
+
+/* =========================
+   MENUS
+   ========================= */
 
 .menu {
 	padding: var(--size-2-1);
