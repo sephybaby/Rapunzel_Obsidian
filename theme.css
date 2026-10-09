@@ -1,227 +1,336 @@
-/* Rapunzel */
-/* This theme is inspired by cherry red aesthetics and follows a general pattern of having cherry red and dark red colour palette */
-/* version: 1.0 */
-/* date: 2026-10-5 */
+/*
+@settings
+name: Rapunzel
+id: rapunzel
+settings:
 
+- id: background-style
+  title: Background Style
+  description: Choose your preferred background.
+  type: class-select
+  allowEmpty: false
+  default: cherry-red
+  options:
 
-/* =========================
-   GENERAL
-   ========================= */
+  - label: Cherry Red
+    value: cherry-red
+  - label: Blue Flowers
+    value: blue-flowers
+    */
+
+/* ========================================
+RAPUNZEL — SHARED THEME SETTINGS
+======================================== */
 
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+--bold-color: #E0A6FF;
+--italic-color: #FFCA78;
+--bold-italic-color: #9D174D;
 
-	--font-text-theme: InconsolataGo;
+--radius-s: 0px;
+--radius-m: 0px;
+--radius-l: 0px;
 
-	/* Main colours */
-	--background-primary: #2b0309;
-	--background-secondary: #2b0309;
+--background-primary: transparent;
+--background-secondary: transparent;
+--background-primary-alt: transparent;
+--background-secondary-alt: transparent;
 
-	--divider-width: 0.5px;
+--text-normal: #dbbfbf;
+--text-muted: #c5a5a5;
+--text-faint: #b2b2b2;
+--text-link: #d8bfdb;
+--text-a: #d8bfdb;
+--text-a-hover: #f0d5f3;
 
-	--text-normal: #dbbfbf;
-	--text-faint: #b2b2b2;
-	--text-link: #b4b4b4;
-	--text-a: #d8bfdb;
-	--text-a-hover: #d8bfdb;
-	--text-mark: #bfc7db;
+--heading-h1: #FF4566;
+--heading-h2: #F078B8;
+--heading-h3: #FFFF91;
+--heading-h4: #54D6A0;
+--heading-h5: #C77DCE;
+--heading-h6: #B6C8FF;
 
-	--code-background: #2b0309;
+--divider-width: 0.5px;
+--code-background: #1A0509;
 
-	--interactive-accent: #5e212a;
-	--interactive-accent-hover: #5e212a;
-	--interactive-before: #5e212a;
+--interactive-accent: #a83250;
+--interactive-accent-hover: #c94b68;
+--interactive-before: #5e6565;
 
-	--blockquote-border: #5e212a;
-	--tag-background: #5e212a;
+--blockquote-border: #a83250;
+--tag-background: rgba(255, 107, 129, 0.15);
 
-	--font-family-editor: 'Rubik';
-	--font-family-preview: 'Rubik';
+--text-highlight-bg: rgba(244, 86, 157, 0.25);
+--background-modifier-border: rgba(255, 107, 129, 0.12);
+--table-border-color: rgba(255, 107, 129, 0.2);
 
-	--bg-sub-accent-55: #5e212a;
-	--bg-accent-55: #5e212a;
-	--bg-accent-25: #5e212a;
+--font-family-editor: 'Rubik';
+--font-family-preview: 'Rubik';
 
-	--text-highlight-bg: #5e212a;
-	--background-modifier-border: #5e212a;
-	--table-border-color: #5e212a;
-	--test-color: #5e212a;
-
-	--file-line-width: 1000px;
-	--editor-border-color: #101014;
-
-	--checkbox-color: #e87283;
-
-	--hr-color: #5e212a;
-	--hr-thickness: 2px;
+--file-line-width: 1000px;
+--editor-border-color: #101014;
+--checkbox-color: #809960;
 }
 
+/* ========================================
+CHERRY RED BACKGROUND
+======================================== */
 
-/* =========================
-   DARK THEME
-   ========================= */
-
-.theme-dark {
-	--text-title-h1: #d99696;
-	--text-title-h2: #857575;
-	--text-title-h3: #bfdbcf;
-	--text-title-h4: #9b6db0;
-	--text-title-h5: #d8bfdb;
-
-	--text-link: #b4b4b4;
-	--text-a: #d8bfdb;
-	--text-a-hover: #d8bfdb;
-	--text-mark: #bfc7db;
-
-	--background-primary: #2b0309;
-	--background-secondary: #2b0309;
+body:not(.blue-flowers) {
+background-color: rgba(0,0,0,0.10) !important;
+background-image: url("https://i.pinimg.com/736x/5c/bc/1f/5cbc1fe901f28ebf26770719d6d6c873.jpg") !important;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
-
-/* =========================
-   LIGHT THEME
-   ========================= */
-
-.theme-light {
-	--text-title-h1: #d99696;
-	--text-title-h2: #857575;
-	--text-title-h3: #bfdbcf;
-	--text-title-h4: #9b6db0;
-	--text-title-h5: #d8bfdb;
-
-	--text-link: #b4b4b4;
-	--text-a: #d8bfdb;
-	--text-a-hover: #d8bfdb;
-	--text-mark: #bfc7db;
-
-	--background-primary: #380910;
-	--background-secondary: #380910;
+/* Let the Cherry Red wallpaper show through */
+body:not(.blue-flowers) .app-container,
+body:not(.blue-flowers) .horizontal-main-container,
+body:not(.blue-flowers) .workspace {
+background-color: transparent !important;
+background-image: none !important;
 }
 
+/* ========================================
+BLUE FLOWERS PALETTE
+======================================== */
 
-/* =========================
-   TOP OBSIDIAN BAR
-   ========================= */
+body.blue-flowers {
+--bold-color: #8bbcff;
 
-/* Main tab/header area */
-.workspace-tab-header-container,
-.workspace-tab-header-container-inner {
-	background-color: #2b0309 !important;
-	background: #2b0309 !important;
+--heading-h1: #8bbcff;
+--heading-h2: #a0caff;
+--heading-h3: #b4d4ff;
+--heading-h4: #c4dfff;
+--heading-h5: #d1e5ff;
+--heading-h6: #dfebff;
+
+--text-link: #a8cfff;
+--text-a: #b4d4ff;
+--text-a-hover: #d5e7ff;
+
+--interactive-accent: #5689c9;
+--interactive-accent-hover: #78a7e6;
+--blockquote-border: #78a7e6;
+
+--tag-background: rgba(139, 188, 255, 0.15);
+--text-highlight-bg: rgba(139, 188, 255, 0.2);
+--background-modifier-border: rgba(139, 188, 255, 0.12);
+--table-border-color: rgba(139, 188, 255, 0.2);
 }
 
-/* The area behind the tabs */
-.mod-root .workspace-tab-header-container {
-	background-color: #2b0309 !important;
-	background: #2b0309 !important;
+/* ========================================
+BLUE FLOWERS BACKGROUND
+======================================== */
+
+body.blue-flowers {
+background-color: #101827 !important;
+background-image: url("https://i.pinimg.com/736x/3f/97/00/3f9700f20bb18a34a2d2eefd2a47b602.jpg") !important;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
-/* Top titlebar */
-.titlebar,
-.titlebar-inner {
-	background-color: #2b0309 !important;
-	background: #2b0309 !important;
+/* Let the Blue Flowers wallpaper show through */
+body.blue-flowers .app-container,
+body.blue-flowers .horizontal-main-container,
+body.blue-flowers .workspace {
+background-color: transparent !important;
+background-image: none !important;
 }
 
-/* Top buttons */
-.titlebar-button-container {
-	background-color: #2b0309 !important;
+/* ========================================
+TRANSPARENT WORKSPACE LAYERS
+======================================== */
+
+body .workspace-split,
+body .workspace-leaf,
+body .workspace-leaf-content,
+body .workspace-tab-container,
+body .workspace-tabs,
+body .view-content,
+body .markdown-source-view,
+body .markdown-reading-view,
+body .cm-scroller,
+body .cm-editor,
+body .markdown-preview-view {
+background-color: transparent !important;
+background-image: none !important;
 }
 
+/* Remove sidebar tint in both themes */
+body .mod-left-split,
+body .mod-right-split {
+background-color: transparent !important;
+background-image: none !important;
+}
 
-/* =========================
-   HEADINGS
-   ========================= */
+/* ========================================
+HEADINGS — READING VIEW
+======================================== */
 
 .markdown-rendered h1 {
-	color: #91aaab !important;
+color: var(--heading-h1) !important;
 }
 
 .markdown-rendered h2 {
-	color: #dbcdbf !important;
+color: var(--heading-h2) !important;
 }
 
 .markdown-rendered h3 {
-	color: #bfdbcf !important;
+color: var(--heading-h3) !important;
 }
 
 .markdown-rendered h4 {
-	color: #bfc7db !important;
+color: var(--heading-h4) !important;
 }
 
 .markdown-rendered h5 {
-	color: #d8bfdb !important;
+color: var(--heading-h5) !important;
 }
 
-
-/* =========================
-   ITALIC
-   ========================= */
-
-.cm-em {
-	color: #a9a1d1;
+.markdown-rendered h6 {
+color: var(--heading-h6) !important;
 }
 
-.markdown-rendered em {
-	color: #a9a1d1 !important;
+/* ========================================
+HEADINGS — LIVE PREVIEW / EDITOR
+======================================== */
+
+.markdown-source-view.mod-cm6 .cm-header-1 {
+color: var(--heading-h1) !important;
 }
 
-
-/* =========================
-   BOLD
-   ========================= */
-
-.cm-strong {
-	color: #ba84b7;
+.markdown-source-view.mod-cm6 .cm-header-2 {
+color: var(--heading-h2) !important;
 }
 
-.markdown-rendered strong {
-	color: #ba84b7 !important;
+.markdown-source-view.mod-cm6 .cm-header-3 {
+color: var(--heading-h3) !important;
 }
 
-
-/* =========================
-   TABS
-   ========================= */
-
-.workspace-tab-header.is-active::before,
-.workspace-tab-header.is-active::after {
-	display: none;
+.markdown-source-view.mod-cm6 .cm-header-4 {
+color: var(--heading-h4) !important;
 }
 
-
-/* =========================
-   SHARP CORNERS
-   ========================= */
-
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
+.markdown-source-view.mod-cm6 .cm-header-5 {
+color: var(--heading-h5) !important;
 }
 
-
-/* =========================
-   MENUS
-   ========================= */
-
-.menu {
-	padding: var(--size-2-1);
+.markdown-source-view.mod-cm6 .cm-header-6 {
+color: var(--heading-h6) !important;
 }
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
+/* ========================================
+BOLD TEXT
+======================================== */
+
+.markdown-rendered strong,
+.markdown-rendered b,
+.markdown-source-view.mod-cm6 .cm-strong,
+.markdown-source-view.mod-cm6 strong {
+color: var(--bold-color) !important;
 }
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+/* ========================================
+ITALIC TEXT
+======================================== */
+
+.markdown-rendered em,
+.markdown-rendered i,
+.markdown-source-view.mod-cm6 .cm-em,
+.markdown-source-view.mod-cm6 em {
+color: var(--italic-color) !important;
 }
+
+/* ========================================
+BOLD + ITALIC TEXT
+======================================== */
+
+.markdown-rendered strong em,
+.markdown-rendered em strong,
+.markdown-rendered strong > em,
+.markdown-rendered em > strong,
+.markdown-source-view.mod-cm6 .cm-strong.cm-em,
+.markdown-source-view.mod-cm6 .cm-em.cm-strong {
+color: var(--bold-italic-color) !important;
+}
+
+/* ========================================
+LINKS
+======================================== */
+
+.markdown-rendered a,
+.markdown-source-view.mod-cm6 .cm-link {
+color: var(--text-link);
+}
+
+.markdown-rendered a:hover {
+color: var(--text-a-hover);
+}
+
+/* ========================================
+BLOCKQUOTES
+======================================== */
+
+.markdown-rendered blockquote {
+border-left: 3px solid var(--blockquote-border);
+}
+
+/* ========================================
+TAGS
+======================================== */
+
+.tag {
+background-color: var(--tag-background);
+}
+
+/* ========================================
+TEXT SELECTION
+======================================== */
+
+::selection {
+background-color: var(--text-highlight-bg);
+}
+
+/* ========================================
+TABLES
+======================================== */
+
+.markdown-rendered table,
+.markdown-rendered th,
+.markdown-rendered td {
+border-color: var(--table-border-color);
+}
+
+/* ========================================
+CHECKBOXES
+======================================== */
+
+input[type="checkbox"] {
+accent-color: var(--checkbox-color);
+}
+
+/* ========================================
+CODE BLOCKS
+======================================== */
+
+.markdown-rendered pre,
+.markdown-rendered code {
+border-radius: 4px;
+}
+
+/* ========================================
+SMOOTH COLOUR TRANSITIONS
+======================================== */
+
+body,
+body * {
+transition:
+color 0.2s ease,
+border-color 0.2s ease;
+}
+
