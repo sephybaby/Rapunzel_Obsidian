@@ -14,7 +14,7 @@ Cherry red theme
 <h4>
 	
 Blue theme	
-![Uploading image.png…]()
+<img width="1728" height="910" alt="image" src="https://github.com/user-attachments/assets/ae79f53a-bf97-4489-b855-4d606bd682df" />
 
 </h4>
 
