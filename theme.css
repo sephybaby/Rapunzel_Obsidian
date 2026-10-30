@@ -1,0 +1,558 @@
+
+/* @settings
+name: Rapunzel
+id: rapunzel
+settings:
+  -
+    id: background-style
+    title: Background Style
+    description: Switch between Cherry Red and Blue Flowers
+    type: class-select
+    allowEmpty: false
+    default: cherry-red
+    options:
+      -
+        label: Cherry Red
+        value: cherry-red
+      -
+        label: Blue Flowers
+        value: blue-flowers
+  -
+    id: cherry-heading
+    title: Cherry Red Palette
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: rapunzel-cherry-bold
+    title: Bold
+    type: variable-color
+    format: hex
+    default: '#9D174D'
+  -
+    id: rapunzel-cherry-italic
+    title: Italic
+    type: variable-color
+    format: hex
+    default: '#48b8b0'
+  -
+    id: rapunzel-cherry-bold-italic
+    title: Bold Italic
+    type: variable-color
+    format: hex
+    default: '#6343b5'
+  -
+    id: rapunzel-cherry-text
+    title: Normal Text
+    type: variable-color
+    format: hex
+    default: '#dbbfbf'
+  -
+    id: rapunzel-cherry-muted
+    title: Muted Text
+    type: variable-color
+    format: hex
+    default: '#c5a5a5'
+  -
+    id: rapunzel-cherry-faint
+    title: Faint Text
+    type: variable-color
+    format: hex
+    default: '#b2b2b2'
+  -
+    id: rapunzel-cherry-h1
+    title: Heading 1
+    type: variable-color
+    format: hex
+    default: '#a81b53'
+  -
+    id: rapunzel-cherry-h2
+    title: Heading 2
+    type: variable-color
+    format: hex
+    default: '#9758d6'
+  -
+    id: rapunzel-cherry-h3
+    title: Heading 3
+    type: variable-color
+    format: hex
+    default: '#FFFF91'
+  -
+    id: rapunzel-cherry-h4
+    title: Heading 4
+    type: variable-color
+    format: hex
+    default: '#54D6A0'
+  -
+    id: rapunzel-cherry-h5
+    title: Heading 5
+    type: variable-color
+    format: hex
+    default: '#C77DCE'
+  -
+    id: rapunzel-cherry-h6
+    title: Heading 6
+    type: variable-color
+    format: hex
+    default: '#B6C8FF'
+  -
+    id: rapunzel-cherry-link
+    title: Links
+    type: variable-color
+    format: hex
+    default: '#d8bfdb'
+  -
+    id: rapunzel-cherry-link-hover
+    title: Link Hover
+    type: variable-color
+    format: hex
+    default: '#f0d5f3'
+  -
+    id: rapunzel-cherry-accent
+    title: Accent
+    type: variable-color
+    format: hex
+    default: '#a83250'
+  -
+    id: rapunzel-cherry-accent-hover
+    title: Accent Hover
+    type: variable-color
+    format: hex
+    default: '#c94b68'
+  -
+    id: rapunzel-cherry-quote
+    title: Blockquote Border
+    type: variable-color
+    format: hex
+    default: '#a83250'
+  -
+    id: rapunzel-cherry-checkbox
+    title: Checkbox
+    type: variable-color
+    format: hex
+    default: '#809960'
+  -
+    id: blue-heading
+    title: Blue Flowers Palette
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: rapunzel-blue-bold
+    title: Bold
+    type: variable-color
+    format: hex
+    default: '#8bbcff'
+  -
+    id: rapunzel-blue-italic
+    title: Italic
+    type: variable-color
+    format: hex
+    default: '#75D6D0'
+  -
+    id: rapunzel-blue-bold-italic
+    title: Bold Italic
+    type: variable-color
+    format: hex
+    default: '#C5A5FF'
+  -
+    id: rapunzel-blue-text
+    title: Normal Text
+    type: variable-color
+    format: hex
+    default: '#D3E0F2'
+  -
+    id: rapunzel-blue-muted
+    title: Muted Text
+    type: variable-color
+    format: hex
+    default: '#A9BEDA'
+  -
+    id: rapunzel-blue-faint
+    title: Faint Text
+    type: variable-color
+    format: hex
+    default: '#849BB9'
+  -
+    id: rapunzel-blue-h1
+    title: Heading 1
+    type: variable-color
+    format: hex
+    default: '#8bbcff'
+  -
+    id: rapunzel-blue-h2
+    title: Heading 2
+    type: variable-color
+    format: hex
+    default: '#a0caff'
+  -
+    id: rapunzel-blue-h3
+    title: Heading 3
+    type: variable-color
+    format: hex
+    default: '#b4d4ff'
+  -
+    id: rapunzel-blue-h4
+    title: Heading 4
+    type: variable-color
+    format: hex
+    default: '#c4dfff'
+  -
+    id: rapunzel-blue-h5
+    title: Heading 5
+    type: variable-color
+    format: hex
+    default: '#d1e5ff'
+  -
+    id: rapunzel-blue-h6
+    title: Heading 6
+    type: variable-color
+    format: hex
+    default: '#dfebff'
+  -
+    id: rapunzel-blue-link
+    title: Links
+    type: variable-color
+    format: hex
+    default: '#A8CFFF'
+  -
+    id: rapunzel-blue-link-hover
+    title: Link Hover
+    type: variable-color
+    format: hex
+    default: '#D5E7FF'
+  -
+    id: rapunzel-blue-accent
+    title: Accent
+    type: variable-color
+    format: hex
+    default: '#5689c9'
+  -
+    id: rapunzel-blue-accent-hover
+    title: Accent Hover
+    type: variable-color
+    format: hex
+    default: '#78a7e6'
+  -
+    id: rapunzel-blue-quote
+    title: Blockquote Border
+    type: variable-color
+    format: hex
+    default: '#78a7e6'
+  -
+    id: rapunzel-blue-checkbox
+    title: Checkbox
+    type: variable-color
+    format: hex
+    default: '#78A7E6'
+  -
+    id: typography-heading
+    title: Typography
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: rapunzel-font
+    title: Font Family
+    type: variable-text
+    default: Rubik
+  -
+    id: rapunzel-line-width
+    title: Editor Line Width
+    type: variable-number
+    format: px
+    default: 1000
+*/
+
+body {
+    --radius-s: 0px;
+    --radius-m: 0px;
+    --radius-l: 0px;
+
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-primary-alt: transparent;
+    --background-secondary-alt: transparent;
+
+    --divider-width: 0.5px;
+
+    --font-family-editor: var(--rapunzel-font, 'Rubik');
+    --font-family-preview: var(--rapunzel-font, 'Rubik');
+
+    --file-line-width: var(--rapunzel-line-width, 1000px);
+
+    --code-background: #1A0509;
+    --editor-border-color: #101014;
+
+    --interactive-before: #5e6565;
+    --tag-background: rgba(255, 107, 129, 0.15);
+    --text-highlight-bg: rgba(244, 86, 157, 0.25);
+    --background-modifier-border: rgba(255, 107, 129, 0.12);
+    --table-border-color: rgba(255, 107, 129, 0.2);
+
+    --bold-color: var(--rapunzel-cherry-bold, #9D174D);
+    --italic-color: var(--rapunzel-cherry-italic, #48b8b0);
+    --bold-italic-color: var(--rapunzel-cherry-bold-italic, #6343b5);
+
+    --text-normal: var(--rapunzel-cherry-text, #dbbfbf);
+    --text-muted: var(--rapunzel-cherry-muted, #c5a5a5);
+    --text-faint: var(--rapunzel-cherry-faint, #b2b2b2);
+
+    --text-link: var(--rapunzel-cherry-link, #d8bfdb);
+    --text-a: var(--rapunzel-cherry-link, #d8bfdb);
+    --text-a-hover: var(--rapunzel-cherry-link-hover, #f0d5f3);
+
+    --heading-h1: var(--rapunzel-cherry-h1, #8a0826);
+    --heading-h2: var(--rapunzel-cherry-h2, #A52345);
+    --heading-h3: var(--rapunzel-cherry-h3, #C92C5A);
+    --heading-h4: var(--rapunzel-cherry-h4, #E63A72);
+    --heading-h5: var(--rapunzel-cherry-h5, #F06A96);
+    --heading-h6: var(--rapunzel-cherry-h6, #F8C9D7);
+
+    --interactive-accent: var(--rapunzel-cherry-accent, #a83250);
+    --interactive-accent-hover: var(--rapunzel-cherry-accent-hover, #c94b68);
+    --blockquote-border: var(--rapunzel-cherry-quote, #a83250);
+    --checkbox-color: var(--rapunzel-cherry-checkbox, #809960);
+}
+
+.cm-strong,
+strong {
+    font-size: 1.2em;
+}
+
+.cm-em,
+em {
+    font-size: 1.2em;
+}
+
+.cm-strong.cm-em,
+strong em,
+em strong {
+    font-size: 1.25em;
+}
+
+body:not(.blue-flowers) {
+    background-color: rgba(0, 0, 0, 0.10) !important;
+    background-image: url("https://i.pinimg.com/736x/97/57/f5/9757f541682bf40b9a28b46b40ab4f50.jpg") !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body:not(.blue-flowers) .app-container,
+body:not(.blue-flowers) .horizontal-main-container,
+body:not(.blue-flowers) .workspace {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.blue-flowers {
+    --bold-color: var(--rapunzel-blue-bold, #8bbcff);
+    --italic-color: var(--rapunzel-blue-italic, #75D6D0);
+    --bold-italic-color: var(--rapunzel-blue-bold-italic, #C5A5FF);
+
+    --text-normal: var(--rapunzel-blue-text, #D3E0F2);
+    --text-muted: var(--rapunzel-blue-muted, #A9BEDA);
+    --text-faint: var(--rapunzel-blue-faint, #849BB9);
+
+    --text-link: var(--rapunzel-blue-link, #A8CFFF);
+    --text-a: var(--rapunzel-blue-link, #A8CFFF);
+    --text-a-hover: var(--rapunzel-blue-link-hover, #D5E7FF);
+
+    --heading-h1: var(--rapunzel-blue-h1, #232d52);
+    --heading-h2: var(--rapunzel-blue-h2, #485278);
+    --heading-h3: var(--rapunzel-blue-h3, #6c84d9);
+    --heading-h4: var(--rapunzel-blue-h4, #4e65b5);
+    --heading-h5: var(--rapunzel-blue-h5, #8e9cd4);
+    --heading-h6: var(--rapunzel-blue-h6, #dfebff);
+
+    --interactive-accent: var(--rapunzel-blue-accent, #5689c9);
+    --interactive-accent-hover: var(--rapunzel-blue-accent-hover, #78a7e6);
+    --blockquote-border: var(--rapunzel-blue-quote, #78a7e6);
+    --checkbox-color: var(--rapunzel-blue-checkbox, #78A7E6);
+
+    --tag-background: rgba(139, 188, 255, 0.15);
+    --text-highlight-bg: rgba(139, 188, 255, 0.2);
+    --background-modifier-border: rgba(139, 188, 255, 0.12);
+    --table-border-color: rgba(139, 188, 255, 0.2);
+
+    --code-background: #0B1425;
+    --editor-border-color: #101827;
+    --interactive-before: #657b9a;
+
+    background-color: #101827 !important;
+    background-image: url("https://i.pinimg.com/736x/36/ab/72/36ab72f751d48146bb1cbf468c913fee.jpg") !important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.blue-flowers .app-container,
+body.blue-flowers .horizontal-main-container,
+body.blue-flowers .workspace {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body .workspace-split,
+body .workspace-leaf,
+body .workspace-leaf-content,
+body .workspace-tab-container,
+body .workspace-tabs,
+body .view-content,
+body .markdown-source-view,
+body .markdown-reading-view,
+body .cm-scroller,
+body .cm-editor,
+body .markdown-preview-view {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body .mod-left-split,
+body .mod-right-split {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.markdown-rendered h1 {
+    color: var(--heading-h1) !important;
+}
+
+.markdown-rendered h2 {
+    color: var(--heading-h2) !important;
+}
+
+.markdown-rendered h3 {
+    color: var(--heading-h3) !important;
+}
+
+.markdown-rendered h4 {
+    color: var(--heading-h4) !important;
+}
+
+.markdown-rendered h5 {
+    color: var(--heading-h5) !important;
+}
+
+.markdown-rendered h6 {
+    color: var(--heading-h6) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-1 {
+    color: var(--heading-h1) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-2 {
+    color: var(--heading-h2) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-3 {
+    color: var(--heading-h3) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-4 {
+    color: var(--heading-h4) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-5 {
+    color: var(--heading-h5) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-header-6 {
+    color: var(--heading-h6) !important;
+}
+
+.markdown-rendered strong,
+.markdown-rendered b,
+.markdown-source-view.mod-cm6 .cm-strong,
+.markdown-source-view.mod-cm6 strong {
+    color: var(--bold-color) !important;
+}
+
+.markdown-rendered em,
+.markdown-rendered i,
+.markdown-source-view.mod-cm6 .cm-em,
+.markdown-source-view.mod-cm6 em {
+    color: var(--italic-color) !important;
+}
+
+.markdown-rendered strong em,
+.markdown-rendered em strong,
+.markdown-rendered strong > em,
+.markdown-rendered em > strong,
+.markdown-source-view.mod-cm6 .cm-strong.cm-em,
+.markdown-source-view.mod-cm6 .cm-em.cm-strong {
+    color: var(--bold-italic-color) !important;
+}
+
+.markdown-rendered a,
+.markdown-source-view.mod-cm6 .cm-link {
+    color: var(--text-link);
+}
+
+.markdown-rendered a:hover {
+    color: var(--text-a-hover);
+}
+
+.markdown-rendered blockquote {
+    border-left: 3px solid var(--blockquote-border);
+}
+
+.tag {
+    background-color: var(--tag-background);
+}
+
+::selection {
+    background-color: var(--text-highlight-bg);
+}
+
+.markdown-rendered table,
+.markdown-rendered th,
+.markdown-rendered td {
+    border-color: var(--table-border-color);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--checkbox-color);
+}
+
+.markdown-rendered pre,
+.markdown-rendered code {
+    border-radius: 4px;
+}
+
+body,
+body * {
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.modal-container,
+.modal,
+.vertical-tab-content,
+.vertical-tab-header {
+    background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.modal-container {
+    background: transparent !important;
+}
+
+.modal,
+.vertical-tab-content,
+.vertical-tab-header {
+    background-color: rgba(10, 7, 10, 0.55) !important;
+    backdrop-filter: blur(4px);
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}

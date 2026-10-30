@@ -93,4 +93,3 @@ Releasing a new version of your theme is the same as releasing the initial versi
   ```
 
   What's important to note here is: the new version is included as the "key" and the "value" is the minimum version of Obsidian that your theme compatible with. So if the new version of your theme is only compatible with an Insider version of Obsidian, it's important to set this value accordingly. This will prevent users on older versions of Obsidian from updating to the newer version of your theme.
-# Rapunzel_Obsidian
