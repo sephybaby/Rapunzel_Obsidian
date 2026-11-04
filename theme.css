@@ -315,21 +315,6 @@ body {
     --checkbox-color: var(--rapunzel-cherry-checkbox, #809960);
 }
 
-.cm-strong,
-strong {
-    font-size: 1.2em;
-}
-
-.cm-em,
-em {
-    font-size: 1.2em;
-}
-
-.cm-strong.cm-em,
-strong em,
-em strong {
-    font-size: 1.25em;
-}
 
 body:not(.blue-flowers) {
     background-color: rgba(0, 0, 0, 0.10) !important;
@@ -362,8 +347,8 @@ body.blue-flowers {
 
     --heading-h1: var(--rapunzel-blue-h1, #232d52);
     --heading-h2: var(--rapunzel-blue-h2, #485278);
-    --heading-h3: var(--rapunzel-blue-h3, #6c84d9);
-    --heading-h4: var(--rapunzel-blue-h4, #4e65b5);
+    --heading-h3: var(--rapunzel-blue-h3, #6c84d7);
+    --heading-h4: var(--rapunzel-blue-h4, #4e65c5);
     --heading-h5: var(--rapunzel-blue-h5, #8e9cd4);
     --heading-h6: var(--rapunzel-blue-h6, #dfebff);
 
@@ -554,5 +539,79 @@ body * {
 }
 
 .modal-bg {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(10, 7, 10, 0.55) !important;
+
 }
+
+/* ==========================================================================
+   VAMPIRE THEME CALLOUTS OVERHAUL (FIXED VISIBILITY)
+   ========================================================================== */
+
+/* Global reset to give ALL callouts a dark, translucent base container */
+.callout {
+  background-color: rgba(20, 5, 5, 0.6) !important; /* Translucent dark wine block */
+  border-left: 3px solid rgb(var(--callout-color)) !important;
+}
+
+/* 1. Muted Rose Gold / Ash (Note, Abstract, Summary, Tldr) */
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  --callout-color: 229, 152, 155;
+  background-color: rgba(229, 152, 155, 0.05) !important;
+}
+
+/* 2. Deep Maroon / Crimson (Info, Todo, Tip, Hint, Important) */
+.callout[data-callout="info"],
+.callout[data-callout="todo"],
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  --callout-color: 255, 74, 107;
+  background-color: rgba(255, 74, 107, 0.05) !important;
+}
+
+/* 3. Sickly Crimson Green / Desaturated Olive (Success, Check, Done) */
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  --callout-color: 143, 168, 131;
+  background-color: rgba(143, 168, 131, 0.04) !important;
+}
+
+/* 4. Warm Amber Gold (Question, Help, FAQ, Warning, Caution, Attention) */
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"],
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  --callout-color: 230, 162, 106;
+  background-color: rgba(230, 162, 106, 0.05) !important;
+}
+
+/* 5. Pure Blood Red (Failure, Fail, Missing, Danger, Error, Bug) */
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  --callout-color: 255, 40, 40;
+  background-color: rgba(255, 40, 40, 0.06) !important;
+}
+
+/* 6. Royal Velvet / Purple Accent (Example) */
+.callout[data-callout="example"] {
+  --callout-color: 184, 142, 219;
+  background-color: rgba(184, 142, 219, 0.05) !important;
+}
+
+/* 7. Muted Charcoal Smoke (Quote, Cite) */
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  --callout-color: 150, 140, 140;
+  background-color: rgba(150, 140, 140, 0.03) !important;
+}
+
